@@ -1,0 +1,31 @@
+
+<header>
+      <h1><a routerLink="/">{{title}}!</a></h1>
+</header>
+<div class="main">
+   
+   
+
+   
+ 
+   <router-outlet></router-outlet>
+
+   
+</div>
+<footer>
+   <h3 (click)="toggleAppDetail()">This is a POC/Research Project - See Details </h3>
+   <div class="app-details" *ngIf="appDetailShow">
+      <h4>Tech</h4>
+      <p>Angular 7, json-server</p>
+      <p>'Active Parties' tooltip is a demo-only feature</p>
+
+      <h4>Backlog</h4>
+      <p>improve form validation</p>
+      <p>wanna sort items by dishtype to section the table</p>
+      <p>improve user experience with success messages and error handling</p>
+      <p>add party edit functionality for host</p>
+   <p>implement responsive visual design</p>
+   </div>
+ 
+   
+</footer>

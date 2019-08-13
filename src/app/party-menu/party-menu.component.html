@@ -1,0 +1,43 @@
+
+  <table *ngIf="groupItems?.length; else noItemsMsg">
+    <tr>
+      <th>Item</th>
+      <th>Serves / Qty.</th>
+      <th>Guest</th>
+      <th></th>
+    </tr>
+   
+    <ng-container *ngFor="let group of groupItems">
+      <tr class="menu-divide">
+        <td colspan="4">{{group.dishtype}}</td>
+      </tr>
+      <tr *ngFor="let item of group.items">
+          <td>{{item.dish}}</td>
+          <td>{{item.servings}}</td>
+          <td>{{item.fname}}</td>
+          <td class="actions-col">
+              <button (click)="startRemove(this.item, this.item.dish)" title="Delete Item">X</button>
+          </td>
+      </tr>
+    </ng-container> 
+  
+     
+  </table>
+  <ng-template #noItemsMsg><p class="no-items">Nobody is bringing anything to this party, add your items to make sure it's a delicious time!</p></ng-template>
+  
+  <div class="remove-modal" *ngIf="removeState">
+      <div *ngIf="!disallowedDelete">
+          <h4>Please only remove your own items</h4>
+          <p>To remove your item, enter your last name here:</p>
+          <input type="text" [formControl]="authName" />
+      
+          <button (click)="doRemove(item)">Remove Item</button>
+          <button (click)="cancel()">Cancel</button>
+      </div>
+      
+    
+      <div *ngIf="disallowedDelete" class="not-auth">
+        <h4>{{removeDish}} is not yours, you do not have permission to remove it.</h4>
+        <button (click)="cancel()">CLOSE</button>
+      </div>
+    </div>

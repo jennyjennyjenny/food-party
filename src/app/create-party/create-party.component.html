@@ -1,0 +1,40 @@
+<section class="create-party">
+    <h2>Host your own potluck</h2>
+    <div class="host-form" *ngIf="!createSuccess">
+    <p>All fields required unless noted. Your last name and email address <strong>will not</strong> be displayed to your guests.</p>
+    <form [formGroup]="createPartyForm" (ngSubmit)="onSubmit()">
+        <label>First Name:</label>
+        <input type="text" formControlName="hostfname" />
+
+        <label>Last Name:</label>
+        <input type="text" formControlName="hostlname" />
+
+        <label>Email Address:</label>
+        <input type="text" formControlName="hostemail" />
+
+        <label>Name Your Party:</label>
+        <input type="text" formControlName="name" />
+
+        <label>Party Date:</label>
+        <input type="text" formControlName="partydate" />
+
+        <label>Party Time:</label>
+        <input type="text" formControlName="partytime" />
+
+        <label>Host Message:<span>(Optional)</span></label>
+        <textarea formControlName="hostmessage"></textarea>
+
+        <p><button type="submit" [disabled]="!createPartyForm.valid" >Start a Party!</button></p>
+    </form>
+    </div>
+    <div class="create-success" *ngIf="createSuccess">
+        <h3>GREAT SUCCESS!</h3>
+        <p>You're hosting your own potluck party. You and your guests can view the party details and start building your potluck menu at the link below.</p>
+        <p>Your party can also be found by entering the name in the Potluck App homepage.</p>
+        
+        <h4>Party Details:</h4>
+        <p><strong>Party Name:</strong> {{ newPartyName }} </p>
+        <p><strong>Party Link:</strong> <a routerLink="/detail/{{newPartyDetails.id}}">{{newPartyDetails.name}}</a> </p>
+
+    </div>
+</section>

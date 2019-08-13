@@ -1,0 +1,233 @@
+{
+  "potlucks": [
+    {
+      "id": 1,
+      "hostemail": "jenniferham@gmail.com",
+      "hostfname": "jennifer",
+      "hostlname": "ham",
+      "partydate": "6/6/2019",
+      "partytime": "4 pm",
+      "hostmessage": "this is not a real party. but it's where i did the most testing.",
+      "name": "testparty",
+      "items": [
+        {
+          "fname": "jenny",
+          "lname": "ham",
+          "dish": "hot dogs",
+          "dishtype": "Main",
+          "servings": "5",
+          "id": 0
+        },
+        {
+          "fname": "sally",
+          "lname": "skellington",
+          "dish": "jellied brains",
+          "dishtype": "Main",
+          "servings": "45",
+          "id": 3
+        },
+        {
+          "fname": "Bounty",
+          "lname": "Man",
+          "dish": "paper towels",
+          "dishtype": "Supplies",
+          "servings": "4 rolls",
+          "id": 4
+        },
+        {
+          "fname": "sally",
+          "lname": "mae",
+          "dish": "steak",
+          "dishtype": "Main",
+          "servings": "12",
+          "id": 6
+        },
+        {
+          "fname": "jen",
+          "lname": "ham",
+          "dish": "ham",
+          "dishtype": "Main",
+          "servings": "2",
+          "id": 7
+        },
+        {
+          "fname": "jack",
+          "lname": "torrance",
+          "dish": "ice cream",
+          "dishtype": "Dessert",
+          "servings": "2",
+          "id": 8
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "hostemail": "jenniferham@gmail.com",
+      "hostfname": "jennifer",
+      "hostlname": "ham",
+      "partydate": "7/6/2019",
+      "partytime": "2 pm",
+      "hostmessage": "this is an office party, friends. please don't bring fish to microwave.",
+      "name": "officeparty",
+      "items": []
+    },
+    {
+      "hostfname": "jen",
+      "hostlname": "ham",
+      "hostemail": "jennifer@imbetterthanyou.net",
+      "name": "Potato Party",
+      "partydate": "6/25/19",
+      "partytime": "5pm",
+      "hostmessage": "this is a test",
+      "id": 4,
+      "items": []
+    },
+    {
+      "hostfname": "jenny",
+      "hostlname": "ham",
+      "hostemail": "jen@email.com",
+      "name": "shark attack",
+      "partydate": "8/8/19",
+      "partytime": "8pm",
+      "hostmessage": "",
+      "items": [],
+      "id": 38
+    },
+    {
+      "hostfname": "Yes",
+      "hostlname": "Me",
+      "hostemail": "kdsjk@email.com",
+      "name": "TheBestParty",
+      "partydate": "7/2/2020",
+      "partytime": "4PM",
+      "hostmessage": "We don't need any more drinks!",
+      "items": [
+        {
+          "fname": "jen",
+          "lname": "ham",
+          "dish": "stuffed ppers",
+          "dishtype": "Appetizer",
+          "servings": "9",
+          "id": 1
+        },
+        {
+          "fname": "jen",
+          "lname": "ham",
+          "dish": "junk",
+          "dishtype": "Appetizer",
+          "servings": "8",
+          "id": 2
+        },
+        {
+          "fname": "jenHAM",
+          "lname": "HAJNA",
+          "dish": "LKSNDFSDD",
+          "dishtype": "Main",
+          "servings": "2"
+        }
+      ],
+      "id": 39
+    },
+    {
+      "hostfname": "jennifer",
+      "hostlname": "ham",
+      "hostemail": "jenniferham@gmail.com",
+      "name": "spicy test",
+      "partydate": "8/8/19",
+      "partytime": "7pm",
+      "hostmessage": "i'll be very pleased if this works",
+      "items": [],
+      "id": 40
+    },
+    {
+      "hostfname": "jennifer",
+      "hostlname": "ham",
+      "hostemail": "jenny.ham@accenture.com",
+      "name": "Overlook",
+      "partydate": "9/9/19",
+      "partytime": "9pm",
+      "hostmessage": "bring somethin tasty to room 237",
+      "items": [
+        {
+          "fname": "jenn",
+          "lname": "ham",
+          "dish": "ice cream",
+          "dishtype": "Dessert",
+          "servings": "8",
+          "id": 1
+        }
+      ],
+      "id": 41
+    },
+    {
+      "hostfname": "luke",
+      "hostlname": "skywalker",
+      "hostemail": "sl@starwar.com",
+      "name": "kessel run",
+      "partydate": "9/9/99",
+      "partytime": "8",
+      "hostmessage": "",
+      "items": [
+        {
+          "fname": "boba",
+          "lname": "fett",
+          "dish": "sarlaac skewers",
+          "dishtype": "Main",
+          "servings": "12"
+        },
+        {
+          "fname": "jen",
+          "lname": "ham",
+          "dish": "stuff",
+          "dishtype": "Main",
+          "servings": "88"
+        },
+        {
+          "fname": "jen",
+          "lname": "hamlkn",
+          "dish": "lknsdfsdfsadfasdf",
+          "dishtype": "Main",
+          "servings": "4"
+        }
+      ],
+      "id": 42
+    },
+    {
+      "hostfname": "jennifer",
+      "hostlname": "hammer",
+      "hostemail": "hamjam@what.com",
+      "name": "ham jam",
+      "partydate": "8/8/19",
+      "partytime": "7:12pm",
+      "hostmessage": "lolwhut",
+      "items": [
+        {
+          "fname": "aloha",
+          "lname": "shirts",
+          "dish": "banana bread",
+          "dishtype": "Side Dish",
+          "servings": "4"
+        },
+        {
+          "fname": "lknn",
+          "lname": "lknln",
+          "dish": "knlskndfsdfsadf ",
+          "dishtype": "Main",
+          "servings": "2"
+        }
+      ],
+      "id": 43
+    },
+    {
+      "hostfname": "jenny",
+      "hostlname": "ham",
+      "hostemail": "jenny@jenny.com",
+      "name": "plan9",
+      "partydate": "9/9/19",
+      "partytime": "9pm",
+      "hostmessage": "",
+      "items": [],
+      "id": 44
+    }
+  ]
+}

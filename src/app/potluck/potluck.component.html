@@ -1,0 +1,15 @@
+
+<div class="secret-tooltip">
+  <span (click)="toggleHelp()">?</span>
+  <div class="inner" *ngIf="demoHelp">
+      <p>ACTIVE PARTIES</p>
+      <ul class="potlucks">
+        <li *ngFor="let potluck of potlucks">
+          {{potluck.name}}
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+

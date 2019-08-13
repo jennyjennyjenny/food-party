@@ -1,0 +1,118 @@
+
+
+<div class="party-details">
+ <h2>You're going to {{potluck?.name}}!</h2>
+
+ <ng-template #noItemsMsg>
+   <div (click)="scrollToAdd(addForm)">
+   <p class="no-items">Nobody is bringing anything to this party, <u>add your items</u> to make sure it's a delicious time!</p>
+    
+  </div>
+  </ng-template>
+
+ <dl>
+   <dt>Date:</dt>
+   <dd>{{ potluck?.partydate }}</dd>
+   <dt>Time:</dt>
+   <dd>{{ potluck?.partytime }}</dd>
+   <dt>Host:</dt>
+   <dd>{{ potluck?.hostfname }} </dd>
+ </dl>
+ <div class="host-msg" *ngIf="potluck?.hostmessage">
+   <h4>A message from your host:</h4>
+   <p>{{ potluck.hostmessage }}</p>
+ </div>
+</div>
+<div class="menu-wrapper" *ngIf="potluck?.items.length > 1; else noItemsMsg">
+<table>
+  <tr>
+      <th>Item</th>
+      <th>Type</th>
+      <th>Serves / Qty.</th>
+      <th>Guest</th>
+      <th></th>
+    
+  </tr>
+  <tr *ngFor="let item of potluck.items">
+    <td>{{item.dish}}</td>
+    <td>{{item.dishtype}}</td>
+    <td>{{item.servings}}</td>
+    <td>{{item.fname}}</td>
+    <td class="actions-col">
+      <button (click)="startRemove(this.item, this.item.dish)" title="Delete Item">X</button>
+  </td>
+  </tr>
+</table>
+</div>
+<!-- <table *ngIf="groupItems?.length; else noItemsMsg">
+  <tr>
+    <th>Item</th>
+    <th>Servings/Quantity</th>
+    <th>Guest Name</th>
+    <th>Actions</th>
+  </tr>
+ 
+  <ng-container *ngFor="let group of groupItems">
+    <tr class="menu-divide">
+      <td colspan="4">{{group.dishtype}}</td>
+    </tr>
+    <tr *ngFor="let item of group.items">
+        <td>{{item.dish}}</td>
+        <td>{{item.servings}}</td>
+        <td>{{item.fname}}</td>
+        <td class="actions-col">
+            <button (click)="startRemove(this.item, this.item.dish)" title="Delete Item">X</button>
+        </td>
+    </tr>
+  </ng-container> 
+</table> -->
+
+<div class="remove-modal" *ngIf="removeState">
+    <div *ngIf="!disallowedDelete">
+        <h4>Please only remove your own items</h4>
+        <p>To remove your item, enter your last name here:</p>
+        <input type="text" [formControl]="authName" />
+    
+        <button (click)="doRemove(item)">Remove Item</button>
+        <button (click)="cancel()">Cancel</button>
+    </div>
+    
+  
+    <div *ngIf="disallowedDelete" class="not-auth">
+      <h4>{{removeDish}} is not yours, you do not have permission to remove it.</h4>
+      <button (click)="cancel()">CLOSE</button>
+    </div>
+  </div>
+
+
+
+
+<section #addForm class="add-items">
+  <h2>Add Your Own Item!</h2>
+  <form [formGroup]="partyItemForm" (ngSubmit)="onSubmit()">
+    <label>First Name:</label>
+    <input type="text" formControlName="fname" />
+  
+    <label>Last Name:</label>
+    <input type="text" formControlName="lname" />
+  
+    <label>Item Type:</label>
+    <select formControlName="dishtype">
+      <option *ngFor="let course of courses" [value]="course.name">
+        {{course.name}}
+      </option>
+    </select>
+  
+    <label>Item:</label>
+    <input type="text" formControlName="dish" />
+  
+    <label>Servings/Quantity:</label>
+    <input type="text" formControlName="servings" />
+
+    
+    <p><button type="submit" [disabled]="!partyItemForm.valid" >Add Your Item</button></p>
+  </form>
+
+
+</section>
+

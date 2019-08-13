@@ -1,0 +1,26 @@
+
+
+<div id="party-search">
+    
+  <label>Find your party by entering the name here: <app-potluck></app-potluck></label>
+  <input #searchBox autocomplete="off" id="search-box" (input)="search(searchBox.value)" />
+
+  <ul class="search-res">
+    <li *ngFor="let potluck of potlucks$ | async">
+      <a routerLink="/detail/{{potluck.id}}">
+        {{potluck.name}}
+      </a>
+
+    </li>
+  </ul>
+
+
+  
+    
+ 
+
+</div>
+
+<div class="home-host" routerLink="/create">
+  <h2>Host Your Own Potluck!</h2>
+</div>
