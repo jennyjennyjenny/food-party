@@ -53,13 +53,18 @@ export class CreatePartyComponent implements OnInit {
        
           let newParty = this.createPartyForm.value;
           newParty.items = [];
+          
           this.potluckService.addParty(newParty)
           .subscribe(
-           (data) => this.newPartyDetails = data
+           (data) => this.newPartyDetails = data,
+           error => console.log("Error: " + error),
+           () => {
+            this.newPartyName = newParty.name;
+            this.createPartyForm.reset();
+            this.showNewParty();
+           }
           );
-          this.newPartyName = newParty.name;
-          this.createPartyForm.reset();
-          this.showNewParty();
+          
       }
 
       showNewParty() {

@@ -73,9 +73,10 @@ export class PartyDetailComponent implements OnInit{
     this.potluckService.updateParty(this.potluck.id, this.potluck)
     .subscribe();
     this.partyItemForm.reset();
+    
   }
 
-  scrollToAdd(el: HTMLElement) {
+  scrollToElement(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth'});
   }
 

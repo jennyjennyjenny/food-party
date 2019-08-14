@@ -2,7 +2,7 @@
   "potlucks": [
     {
       "id": 1,
-      "hostemail": "jenniferham@gmail.com",
+      "hostemail": "jenny@jenny.com",
       "hostfname": "jennifer",
       "hostlname": "ham",
       "partydate": "6/6/2019",
@@ -62,24 +62,13 @@
     },
     {
       "id": 2,
-      "hostemail": "jenniferham@gmail.com",
+      "hostemail": "jenny@jenny.com",
       "hostfname": "jennifer",
       "hostlname": "ham",
       "partydate": "7/6/2019",
       "partytime": "2 pm",
       "hostmessage": "this is an office party, friends. please don't bring fish to microwave.",
       "name": "officeparty",
-      "items": []
-    },
-    {
-      "hostfname": "jen",
-      "hostlname": "ham",
-      "hostemail": "jennifer@imbetterthanyou.net",
-      "name": "Potato Party",
-      "partydate": "6/25/19",
-      "partytime": "5pm",
-      "hostmessage": "this is a test",
-      "id": 4,
       "items": []
     },
     {
@@ -93,56 +82,10 @@
       "items": [],
       "id": 38
     },
-    {
-      "hostfname": "Yes",
-      "hostlname": "Me",
-      "hostemail": "kdsjk@email.com",
-      "name": "TheBestParty",
-      "partydate": "7/2/2020",
-      "partytime": "4PM",
-      "hostmessage": "We don't need any more drinks!",
-      "items": [
-        {
-          "fname": "jen",
-          "lname": "ham",
-          "dish": "stuffed ppers",
-          "dishtype": "Appetizer",
-          "servings": "9",
-          "id": 1
-        },
-        {
-          "fname": "jen",
-          "lname": "ham",
-          "dish": "junk",
-          "dishtype": "Appetizer",
-          "servings": "8",
-          "id": 2
-        },
-        {
-          "fname": "jenHAM",
-          "lname": "HAJNA",
-          "dish": "LKSNDFSDD",
-          "dishtype": "Main",
-          "servings": "2"
-        }
-      ],
-      "id": 39
-    },
-    {
+   {
       "hostfname": "jennifer",
       "hostlname": "ham",
-      "hostemail": "jenniferham@gmail.com",
-      "name": "spicy test",
-      "partydate": "8/8/19",
-      "partytime": "7pm",
-      "hostmessage": "i'll be very pleased if this works",
-      "items": [],
-      "id": 40
-    },
-    {
-      "hostfname": "jennifer",
-      "hostlname": "ham",
-      "hostemail": "jenny.ham@accenture.com",
+      "hostemail": "jenny@jenny.com",
       "name": "Overlook",
       "partydate": "9/9/19",
       "partytime": "9pm",
@@ -174,60 +117,54 @@
           "dish": "sarlaac skewers",
           "dishtype": "Main",
           "servings": "12"
-        },
-        {
-          "fname": "jen",
-          "lname": "ham",
-          "dish": "stuff",
-          "dishtype": "Main",
-          "servings": "88"
-        },
-        {
-          "fname": "jen",
-          "lname": "hamlkn",
-          "dish": "lknsdfsdfsadfasdf",
-          "dishtype": "Main",
-          "servings": "4"
         }
       ],
       "id": 42
     },
     {
-      "hostfname": "jennifer",
-      "hostlname": "hammer",
-      "hostemail": "hamjam@what.com",
-      "name": "ham jam",
-      "partydate": "8/8/19",
-      "partytime": "7:12pm",
-      "hostmessage": "lolwhut",
+      "hostfname": "chewie",
+      "hostlname": "chewer",
+      "hostemail": "chewie@bacca.com",
+      "name": "HHARHRHRBNRLS",
+      "partydate": "7/7/3408",
+      "partytime": "3pm",
+      "hostmessage": "",
       "items": [
         {
-          "fname": "aloha",
-          "lname": "shirts",
-          "dish": "banana bread",
+          "fname": "jen",
+          "lname": "ham",
+          "dish": "Porg Poppers",
           "dishtype": "Side Dish",
-          "servings": "4"
+          "servings": "22"
         },
         {
-          "fname": "lknn",
-          "lname": "lknln",
-          "dish": "knlskndfsdfsadf ",
-          "dishtype": "Main",
-          "servings": "2"
+          "fname": "jen",
+          "lname": "ham",
+          "dish": "Hutt Potatoes",
+          "dishtype": "Side Dish",
+          "servings": "12"
         }
       ],
-      "id": 43
+      "id": 48
     },
     {
-      "hostfname": "jenny",
-      "hostlname": "ham",
-      "hostemail": "jenny@jenny.com",
-      "name": "plan9",
-      "partydate": "9/9/19",
-      "partytime": "9pm",
-      "hostmessage": "",
-      "items": [],
-      "id": 44
+      "hostfname": "han",
+      "hostlname": "solo",
+      "hostemail": "scoundrel@solo.com",
+      "name": "EmpireSmash",
+      "partydate": "3/3/20",
+      "partytime": "2pm",
+      "hostmessage": "Rebel Scum ONLY",
+      "items": [
+        {
+          "fname": "jen",
+          "lname": "solo",
+          "dish": "Hutt Potatoes",
+          "dishtype": "Side Dish",
+          "servings": "22"
+        }
+      ],
+      "id": 49
     }
   ]
 }

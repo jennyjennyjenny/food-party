@@ -3,12 +3,7 @@
 <div class="party-details">
  <h2>You're going to {{potluck?.name}}!</h2>
 
- <ng-template #noItemsMsg>
-   <div (click)="scrollToAdd(addForm)">
-   <p class="no-items">Nobody is bringing anything to this party, <u>add your items</u> to make sure it's a delicious time!</p>
-    
-  </div>
-  </ng-template>
+
 
  <dl>
    <dt>Date:</dt>
@@ -23,7 +18,8 @@
    <p>{{ potluck.hostmessage }}</p>
  </div>
 </div>
-<div class="menu-wrapper" *ngIf="potluck?.items.length > 1; else noItemsMsg">
+
+<div class="menu-wrapper" *ngIf="potluck?.items.length; else noItemsMsg">
 <table>
   <tr>
       <th>Item</th>
@@ -44,6 +40,12 @@
   </tr>
 </table>
 </div>
+<ng-template #noItemsMsg>
+  <div (click)="scrollToElement(addForm)">
+  <p class="no-items">Nobody is bringing anything to this party, <u>add your items</u> to make sure it's a delicious time!</p>
+   
+ </div>
+ </ng-template>
 <!-- <table *ngIf="groupItems?.length; else noItemsMsg">
   <tr>
     <th>Item</th>
